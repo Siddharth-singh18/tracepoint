@@ -1,0 +1,6 @@
+CELL_ID,SITE_NAME,LATITUDE,LONGITUDE,SECTOR,AZIMUTH,ADDRESS
+CELL-NORTH-01,North Hub Tower,28.7041,77.1025,1,60,Sector 14 Rohini Delhi
+CELL-CENTRAL-02,Connaught Central,28.6315,77.2167,2,180,Connaught Place Central Delhi
+CELL-SOUTH-03,Saket Metro Tower,28.5244,77.2100,1,120,Saket District Centre New Delhi
+CELL-EAST-04,Mayur Vihar Site,28.6080,77.2990,3,300,Mayur Vihar Phase 1 Delhi
+CELL-WEST-05,Dwarka Sector 10,28.5823,77.0500,2,240,Dwarka Sector 10 New Delhi

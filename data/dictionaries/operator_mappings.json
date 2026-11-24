@@ -1,0 +1,77 @@
+{
+  "templates": [
+    {
+      "id": "operator_a_template",
+      "name": "Operator A Standard CDR",
+      "record_type": "CDR",
+      "signature_columns": ["CALLING_NO", "CALLED_NO", "CALL_DATE", "CALL_TIME"],
+      "columns": {
+        "a_party": "CALLING_NO",
+        "b_party": "CALLED_NO",
+        "call_date": "CALL_DATE",
+        "call_time": "CALL_TIME",
+        "duration_seconds": "DURATION_SEC",
+        "imei": "IMEI",
+        "imsi": "IMSI",
+        "first_cell_id": "FIRST_CELL_ID",
+        "last_cell_id": "LAST_CELL_ID",
+        "event_type": "CALL_TYPE"
+      },
+      "date_format": "%Y-%m-%d",
+      "time_format": "%H:%M:%S",
+      "timezone": "Asia/Kolkata"
+    },
+    {
+      "id": "operator_b_template",
+      "name": "Operator B Export CDR",
+      "record_type": "CDR",
+      "signature_columns": ["A_PARTY", "B_PARTY", "EVENT_TIME"],
+      "columns": {
+        "a_party": "A_PARTY",
+        "b_party": "B_PARTY",
+        "event_time": "EVENT_TIME",
+        "duration_seconds": "DURATION_SEC",
+        "imei": "IMEI",
+        "imsi": "IMSI",
+        "cell_id": "CELL_ID",
+        "event_type": "RECORD_TYPE"
+      },
+      "timestamp_format": "%d-%m-%Y %H:%M:%S",
+      "timezone": "Asia/Kolkata"
+    },
+    {
+      "id": "standard_ipdr_template",
+      "name": "Standard IPDR Export",
+      "record_type": "IPDR",
+      "signature_columns": ["SUBSCRIBER_REF", "PUBLIC_IP", "SOURCE_PORT"],
+      "columns": {
+        "subscriber_ref": "SUBSCRIBER_REF",
+        "public_ip": "PUBLIC_IP",
+        "source_port": "SOURCE_PORT",
+        "destination_ip": "DESTINATION_IP",
+        "destination_port": "DESTINATION_PORT",
+        "start_time": "START_TIME",
+        "end_time": "END_TIME",
+        "bytes_in": "BYTES_IN",
+        "bytes_out": "BYTES_OUT"
+      },
+      "timestamp_format": "%Y-%m-%d %H:%M:%S",
+      "timezone": "Asia/Kolkata"
+    },
+    {
+      "id": "standard_tower_template",
+      "name": "Cell Tower Metadata",
+      "record_type": "TOWER",
+      "signature_columns": ["CELL_ID", "LATITUDE", "LONGITUDE"],
+      "columns": {
+        "cell_id": "CELL_ID",
+        "site_name": "SITE_NAME",
+        "latitude": "LATITUDE",
+        "longitude": "LONGITUDE",
+        "sector": "SECTOR",
+        "azimuth": "AZIMUTH",
+        "address": "ADDRESS"
+      }
+    }
+  ]
+}
